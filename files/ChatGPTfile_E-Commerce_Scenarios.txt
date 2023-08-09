@@ -1,0 +1,10 @@
+1. Verify that a user can successfully login with valid credentials.
+2. Verify that a user cannot login with invalid or incorrect credentials.
+3. Verify that the login fields are case-sensitive.
+4. Verify that a user cannot login with an empty username or password field.
+5. Verify that a user is redirected to the correct page after successful login.
+6. Verify that a user receives an appropriate error message when login fails.
+7. Verify that a user is able to reset their password if they forget it.
+8. Verify that the "Remember Me" functionality works as expected.
+9. Verify that a user is automatically logged out after a certain period of inactivity.
+10. Verify that a user is able to view and edit their account details after login.

@@ -1,0 +1,110 @@
+2023-08-09 17:49:54,769  INFO [main] LoginStepDefinition:30 - Base URI ishttps://api.openai.com/v1/
+2023-08-09 17:49:54,769  INFO [main] LoginStepDefinition:31 - Token issk-wYGQCP58NbA0lDO0ed9ZT3BlbkFJoAJBEt4r0bKSrPtjZdSL
+2023-08-09 17:49:55,826 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://api.openai.com:443
+2023-08-09 17:49:55,904 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to api.openai.com:443
+2023-08-09 17:49:56,315 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-08-09 17:49:56,316 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-08-09 17:49:56,316 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-08-09 17:49:56,316 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-08-09 17:49:56,316 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /v1/chat/completions HTTP/1.1
+2023-08-09 17:49:56,316 DEBUG [main] wire:73 -  >> "POST /v1/chat/completions HTTP/1.1[\r][\n]"
+2023-08-09 17:49:56,316 DEBUG [main] wire:73 -  >> "Authorization: Bearer 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[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Content-Length: 126[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Host: api.openai.com[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.3)[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-08-09 17:49:56,331 DEBUG [main] headers:278 - >> POST /v1/chat/completions HTTP/1.1
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Authorization: Bearer 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
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Accept: */*
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Content-Length: 126
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Host: api.openai.com
+2023-08-09 17:49:56,331 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-08-09 17:49:56,346 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.3)
+2023-08-09 17:49:56,346 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-08-09 17:49:56,346 DEBUG [main] wire:73 -  >> "{[\r][\n]"
+2023-08-09 17:49:56,346 DEBUG [main] wire:73 -  >> "    "model": "gpt-3.5-turbo",[\r][\n]"
+2023-08-09 17:49:56,346 DEBUG [main] wire:73 -  >> "    "messages": [{ "role": "user", "content": "Login Test case for E-commerce website" }][\r][\n]"
+2023-08-09 17:49:56,346 DEBUG [main] wire:87 -  >> "}"
+2023-08-09 17:50:07,518 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-08-09 17:50:07,522 DEBUG [main] wire:73 -  << "Date: Wed, 09 Aug 2023 12:20:07 GMT[\r][\n]"
+2023-08-09 17:50:07,522 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2023-08-09 17:50:07,524 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-08-09 17:50:07,525 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-08-09 17:50:07,527 DEBUG [main] wire:73 -  << "access-control-allow-origin: *[\r][\n]"
+2023-08-09 17:50:07,527 DEBUG [main] wire:73 -  << "Cache-Control: no-cache, must-revalidate[\r][\n]"
+2023-08-09 17:50:07,527 DEBUG [main] wire:73 -  << "openai-model: gpt-3.5-turbo-0613[\r][\n]"
+2023-08-09 17:50:07,527 DEBUG [main] wire:73 -  << "openai-organization: user-kqtzeqmtnh2hv5wxyykmiy6c[\r][\n]"
+2023-08-09 17:50:07,527 DEBUG [main] wire:73 -  << "openai-processing-ms: 10621[\r][\n]"
+2023-08-09 17:50:07,532 DEBUG [main] wire:73 -  << "openai-version: 2020-10-01[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "strict-transport-security: max-age=15724800; includeSubDomains[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-limit-requests: 200[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-limit-tokens: 40000[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-remaining-requests: 199[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-remaining-tokens: 39973[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-reset-requests: 7m12s[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-ratelimit-reset-tokens: 40ms[\r][\n]"
+2023-08-09 17:50:07,534 DEBUG [main] wire:73 -  << "x-request-id: b6d43c81b8f462e78713f59ac1f788c2[\r][\n]"
+2023-08-09 17:50:07,546 DEBUG [main] wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2023-08-09 17:50:07,546 DEBUG [main] wire:73 -  << "Server: cloudflare[\r][\n]"
+2023-08-09 17:50:07,546 DEBUG [main] wire:73 -  << "CF-RAY: 7f3ff3458a2317b7-MAA[\r][\n]"
+2023-08-09 17:50:07,548 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-08-09 17:50:07,548 DEBUG [main] wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2023-08-09 17:50:07,550 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-09 17:50:07,552 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-08-09 17:50:07,552 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << Date: Wed, 09 Aug 2023 12:20:07 GMT
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << Content-Type: application/json
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << access-control-allow-origin: *
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << Cache-Control: no-cache, must-revalidate
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << openai-model: gpt-3.5-turbo-0613
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << openai-organization: user-kqtzeqmtnh2hv5wxyykmiy6c
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << openai-processing-ms: 10621
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << openai-version: 2020-10-01
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << strict-transport-security: max-age=15724800; includeSubDomains
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << x-ratelimit-limit-requests: 200
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << x-ratelimit-limit-tokens: 40000
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << x-ratelimit-remaining-requests: 199
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << x-ratelimit-remaining-tokens: 39973
+2023-08-09 17:50:07,552 DEBUG [main] headers:265 - << x-ratelimit-reset-requests: 7m12s
+2023-08-09 17:50:07,566 DEBUG [main] headers:265 - << x-ratelimit-reset-tokens: 40ms
+2023-08-09 17:50:07,568 DEBUG [main] headers:265 - << x-request-id: b6d43c81b8f462e78713f59ac1f788c2
+2023-08-09 17:50:07,568 DEBUG [main] headers:265 - << CF-Cache-Status: DYNAMIC
+2023-08-09 17:50:07,568 DEBUG [main] headers:265 - << Server: cloudflare
+2023-08-09 17:50:07,571 DEBUG [main] headers:265 - << CF-RAY: 7f3ff3458a2317b7-MAA
+2023-08-09 17:50:07,571 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-08-09 17:50:07,572 DEBUG [main] headers:265 - << alt-svc: h3=":443"; ma=86400
+2023-08-09 17:50:07,573 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-08-09 17:50:07,588 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2023-08-09 17:50:07,588 DEBUG [main] wire:73 -  << "23e[\r][\n]"
+2023-08-09 17:50:07,588 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8c]S[0xc1]n[0xdb]0[0xc][0xbd][0xe7]+[0x8][0x9d][0x1b][0xa3]I[0x9a][0xa4][0xc9]m[0xe7][0xa1][0x97][0x16](0[0xcc]C[0xc1][0xc8]t[0xcc][0xd6]&[\r][0x89]N[0x1a][0x14][0xfd][0xf7]A[0x8e][0xd3][0xa6][[0x8b][0xed][0xa2][0x3][0x9f][0xf8][0xf8][0xf8][0xa4][0xf7]2[0x2]p\[0xb8]58_[0xa1][0xf9][0xa6][0xad][0xc7][0xcb][0xda][0xdf]}[0x9f][0xad][0xee][0xb1]Y.[0x1f][0xef][0xf]Qo[0xa7]7So[0xb3][0x1f][0x8b]o[0x93];w[0x91]:t[0xf3]H[0xde]N][0x99][0xd7][0xa6][0xad][0xc9]X[0xe5][0x8][0xfb]@h[0x94]X'[0x8b][0xd5]d~=[0x9b][0xaf][0x16]=[0xd0]hAuj[0xdb][0xb6]6[0x9e]e[0xf3][0xb1]ua[0xa3][0xe3][0xcb][0xc5]d6tV[0xca][0x9e][0xa2][[0xc3][0xcf][0x11][0x0][0xc0]K&[0x8d]R[0xd0][0xb3][[0xc3][0xe5][0xc5][0xa9][0xd2]P[0x8c][0xb8]%[0xb7]~[0xbb][0x4][0xe0][0x82][0xd6][0xa9][0xe2]0F[0x8e][0x86]b[0xee][0xe2][0x1d][0xf4]*F[0xd2][0xcb][0x9e]dpO[0x81][0xcb][0x3]X[0x85][0x6][0x8]][0xa4][0x0][0x1e][0x5]b[0xe7]=[0xc5]Xvu}[0x80]Z[0xb7],[0xb0]g[0xab]`[0x87]5[0x17][0xe0][0x3][0x15]$[0xc6]X[0xc7],[0x97][0xe9]W,[0xa2]v[0xde][0xcb]r[0xec][0xd6][0x0],^C oP[0xcd]>RYE[0x3]A[0xc9]T[0x17][0x11]0[0x10]x[0x8c]4[0x8e]$[0x91][0x8d]w[0x94][0xe5]r[0xf5][0x9f][0xf3]Q[0x80][0x9a][0xd6][0xe]=.[0xd8]PR[0xd2]b[0x8c]{[\r][0xc5]qB[0x96][0xcb][0xfc]S6[0x8e][0x10][0xa8][0xe0]$[0x99][\n]"
+2023-08-09 17:50:07,588 DEBUG [main] wire:87 -  << "0[0xed][0xa5][0x9d]vhqK[0x80][0xa5]Q8[0xf3][0xed]89[0xcb]e[0xf1])a O[0xbc][0xa3][0x98]Ta[0xdb][0x6]m[0x3][0xa3][0x11]P[0x8][0x1a]`xU[0xd8]W$'[0x7][0x90]{[0x8b][0x96]_[0xe9][0xc3]MMIY[0xa0]H[0xbd]u|[0xb6][0x1d][0x97][0xa9]r[0x80]R[0xc3][0x96][0xc][0xd8][0xb2]\[0xae][0xff]6;w[0xb7][0xd4]P[0xb3][0xa1][0x0]7[0x94];(;[0xf1][0xe9]Cc[0xcd]v[0x80][0xbd][0x86][0xa7][0x8][0x18][0x81][0x9e][0xdb][0xde][0x88],[0x97][0xd5][0x97]r:[0xd3][0x6][0x8d]=[0xe]_hK[0x5]hg[0x83]Q[0x8][0x9e][0x82]![0xb][0xb4][0x14]X[0xb][0xd0][0x12]X[0xd0][0x1b][0xef][0xd8][0xe]Y.[0x93][0xcb]-[0xba]c[0xda][0x3]J[0x1]T[0xf0]ia[0xf4]^;1([0xc8][0x92]_[0xc3][0xb0][0xe3]S[0xb8]![0x3][0xaf]o[0xe1])Y8V[0xf][0x81]0[0xaa][0xa4]@D[0xd3][0xf6]x[0xed]u[0x4][0xf0][0xab][0xf]c[0xf7]!_[0xae][\r][0xda][0xb4][0xf6]`[0xfa]D[0x92][0x12]:[0xb9]:[0xd2][0xb9][0xf7][0xf8][0x9f][0x81][0xf3][0xe9][0x80][0x9a][0x1a][0xd6]g[0xc0]b1JC^G"
+2023-08-09 17:50:07,588 DEBUG [main] wire:87 -  << "[0xbf][0x1][0x0][0x0][0xff][0xff][0x3][0x0]s[0xf8][0xa5]o|[0x4][0x0][0x0]"
+2023-08-09 17:50:07,588 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-09 17:50:07,598 DEBUG [main] wire:73 -  << "0[\r][\n]"
+2023-08-09 17:50:07,598 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-08-09 17:50:07,600 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-08-09 17:50:07,663 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@21bd128b
+2023-08-09 17:50:07,663 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-08-09 17:50:08,856  INFO [main] LoginStepDefinition:52 - Number of response1
+2023-08-09 17:50:08,923  INFO [main] LoginStepDefinition:58 - ****** CHAT GPT RESPONSE ****1. Verify that a user can successfully login with valid credentials.
+2. Verify that a user cannot login with invalid or incorrect credentials.
+3. Verify that the login fields are case-sensitive.
+4. Verify that a user cannot login with an empty username or password field.
+5. Verify that a user is redirected to the correct page after successful login.
+6. Verify that a user receives an appropriate error message when login fails.
+7. Verify that a user is able to reset their password if they forget it.
+8. Verify that the "Remember Me" functionality works as expected.
+9. Verify that a user is automatically logged out after a certain period of inactivity.
+10. Verify that a user is able to view and edit their account details after login.
+2023-08-09 17:50:09,057 DEBUG [Finalizer] DefaultClientConnection:180 - Connection 0.0.0.0:54029<->104.18.6.192:443 closed
+2023-08-09 18:22:23,703  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-09 18:22:23,710  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-09 18:22:36,058  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-09 18:22:36,061  WARN [main] LoginStepDefinition:20 - Sample message to log

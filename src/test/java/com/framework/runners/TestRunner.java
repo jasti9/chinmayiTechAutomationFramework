@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@chatGPT",
+		tags = "@login",
 		glue = {"com.framework.stepDefinitions"},
 	    features={"src/test/resources/features/"},
 	    plugin = { "me.jvt.cucumber.report.PrettyReports:target/cucumber" },
