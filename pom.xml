@@ -85,8 +85,18 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.3.1</version>
+			<version>5.1.1</version>
+			<scope>compile</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-all -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured-all</artifactId>
+			<version>5.1.1</version>
+			<scope>compile</scope>
+		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
 		<dependency>
@@ -146,6 +156,22 @@
 				<version>3.1.2</version>
 				<configuration>
 					<testFailureIgnore> true </testFailureIgnore>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.3.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<finalName>ChinmayiTechJars/chinmayiTechFramework</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -2,6 +2,8 @@ package com.framework.stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 
+import com.framework.enums.DriverType;
+import com.framework.enums.EnvironmentType;
 import com.framework.utils.DriverFactory;
 import com.framework.utils.FileReaderManager;
 
@@ -20,14 +22,16 @@ public class Hooks {
 
 	@Before(order = 0)
 	public void readConfig() {
-		appUrl = FileReaderManager.getInstance().getConfigReader().getApplicationUrl();
-		isAPI = FileReaderManager.getInstance().getConfigReader().getIsAPI();
+		appUrl = new FileReaderManager("configs/Config.properties").getConfigReader().getApplicationUrl();
+		isAPI = new FileReaderManager("configs/Config.properties").getConfigReader().getIsAPI();
 	}
 
 	@Before(order = 1)
 	public void setUp() throws InterruptedException {
 		if (!isAPI) {
-			factory = new DriverFactory();
+			DriverType driverType = new FileReaderManager("configs/Config.properties").getConfigReader().getBrowser();
+			EnvironmentType envType = new FileReaderManager("configs/Config.properties").getConfigReader().getEnvironment();
+			factory = new DriverFactory(envType, driverType);
 			driver = factory.createDriver();
 			driver.get(appUrl);
 			Thread.sleep(8000);

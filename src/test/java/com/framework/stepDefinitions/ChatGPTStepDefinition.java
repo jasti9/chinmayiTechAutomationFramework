@@ -19,7 +19,7 @@ import java.io.IOException;
 
 public class ChatGPTStepDefinition {
 
-	Logger log = Logger.getLogger(LoginStepDefinition.class);
+	Logger log = Logger.getLogger(ChatGPTStepDefinition.class);
 	String chatGPTToken;
 	String apiResponse;
 

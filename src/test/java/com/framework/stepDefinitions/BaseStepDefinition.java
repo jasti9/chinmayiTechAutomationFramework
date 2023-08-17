@@ -8,7 +8,7 @@ import com.framework.utils.FileReaderManager;
 public class BaseStepDefinition {
 	
 	WebDriver driver = DriverFactory.getDriver();
-	String userName = FileReaderManager.getInstance().getConfigReader().getUserName();
-	String password = FileReaderManager.getInstance().getConfigReader().getPassword();
+	String userName = new FileReaderManager("configs/Config.properties").getConfigReader().getUserName();
+	String password =  new FileReaderManager("configs/Config.properties").getConfigReader().getPassword();
 
 }

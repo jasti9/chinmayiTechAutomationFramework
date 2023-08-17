@@ -12,9 +12,8 @@ import com.framework.enums.EnvironmentType;
 public class ConfigFileReader {
 	
 	private Properties properties;
-	private final String propertyFilePath= "configs//Config.properties";
 
-	public ConfigFileReader(){
+	public ConfigFileReader(String propertyFilePath){
 		BufferedReader reader;
 		try {
 			reader = new BufferedReader(new FileReader(propertyFilePath));

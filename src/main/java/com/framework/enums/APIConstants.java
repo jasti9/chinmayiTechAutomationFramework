@@ -3,7 +3,7 @@ package com.framework.enums;
 public enum APIConstants {
 
 	BASEURI("https://api.openai.com/v1/"),
-	CHATGPT_TOKEN("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"),
+	CHATGPT_TOKEN("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"),
 	CHATGPT_POSTREQUEST("chat/completions");
 
 	private String value;
