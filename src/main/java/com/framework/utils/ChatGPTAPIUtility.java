@@ -45,7 +45,7 @@ public class ChatGPTAPIUtility {
 
 		for (int i = 0; i < noOfContents; i++) {
 			String msg = js.get("choices[" + i + "].message.content");
-			path = System.getProperty("user.dir") + "\\files\\" + "ChatGPTfile_" + fileName + ".txt";
+			path = System.getProperty("user.dir") + "\\files\\" +  fileName + ".txt";
 			fWriter = new BufferedWriter(new FileWriter(path));
 			fWriter.write(msg);
 			fWriter.close();
