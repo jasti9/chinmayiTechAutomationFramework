@@ -380,3 +380,23 @@ These are just a few examples, and depending on the specific requirements and fu
 2023-08-17 13:14:56,330  WARN [main] LoginStepDefinition:20 - Sample message to log
 2023-08-17 13:15:08,644  INFO [main] LoginStepDefinition:19 - Logged into application
 2023-08-17 13:15:08,645  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-17 13:18:31,419  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-17 13:18:31,425  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-17 13:18:43,774  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-17 13:18:43,774  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-17 13:20:25,246  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-17 13:20:25,251  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-17 13:20:37,553  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-17 13:20:37,554  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-20 20:17:22,804  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-20 20:17:22,808  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-20 20:17:36,170  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-20 20:17:36,171  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-21 09:22:07,424  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-21 09:22:07,431  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-21 09:22:27,454  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-21 09:22:27,455  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-21 09:52:42,603  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-21 09:52:42,612  WARN [main] LoginStepDefinition:20 - Sample message to log
+2023-08-21 09:52:59,120  INFO [main] LoginStepDefinition:19 - Logged into application
+2023-08-21 09:52:59,120  WARN [main] LoginStepDefinition:20 - Sample message to log

@@ -9,6 +9,10 @@ import java.util.Properties;
 import com.framework.enums.DriverType;
 import com.framework.enums.EnvironmentType;
 
+/*
+ * Reads configuration file from the path shared by user
+ */
+
 public class ConfigFileReader {
 	
 	private Properties properties;

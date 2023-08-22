@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.framework.enums.DriverType;
 import com.framework.enums.EnvironmentType;
+import com.framework.utils.BrowserManager;
 import com.framework.utils.DriverFactory;
 import com.framework.utils.FileReaderManager;
 
@@ -31,8 +32,11 @@ public class Hooks {
 		if (!isAPI) {
 			DriverType driverType = new FileReaderManager("configs/Config.properties").getConfigReader().getBrowser();
 			EnvironmentType envType = new FileReaderManager("configs/Config.properties").getConfigReader().getEnvironment();
-			factory = new DriverFactory(envType, driverType);
-			driver = factory.createDriver();
+			DriverFactory.setDriverType(driverType);
+			DriverFactory.setEnvironmentType(envType);
+			
+			BrowserManager browser = new BrowserManager();
+			driver = browser.openBrowser();
 			driver.get(appUrl);
 			Thread.sleep(8000);
 		}

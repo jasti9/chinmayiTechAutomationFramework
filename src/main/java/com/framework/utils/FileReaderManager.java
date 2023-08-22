@@ -10,16 +10,6 @@ public class FileReaderManager {
     {
 		config = new ConfigFileReader(filePath);
     }
-
-	/*
-	public static synchronized FileReaderManager getInstance()
-    {
-        if (fileReader == null)
-        	fileReader = new FileReaderManager();
-        return fileReader;
-    }
-    
-    */
 	
 	public ConfigFileReader getConfigReader() {
 		return config;	

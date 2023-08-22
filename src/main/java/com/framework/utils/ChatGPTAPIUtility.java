@@ -53,6 +53,11 @@ public class ChatGPTAPIUtility {
 
 	}
 	
+	/**
+	 * Read the content requested by user and write the response to the fileName passed
+	 * @param contentRequested
+	 * @param fileName
+	 */
 	
 	public void saveResponseFromChatGPT(String contentRequested, String fileName) {
 		connectToChatGPTApi();
